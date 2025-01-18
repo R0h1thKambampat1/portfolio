@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../default.css" />
+    <link id="theme-style" rel="stylesheet" type="text/css" href="" />
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Fundamentals of Digital Signal Processing</title>
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <div class="dots-wrapper">
+        <div id="dot-1" class="browser-dot"></div>
+        <div id="dot-2" class="browser-dot"></div>
+        <div id="dot-3" class="browser-dot"></div>
+      </div>
+      <ul id="navigation">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../../skills/skills.html">Skills</a>
+        </li>
+        <li>
+          <a href="../../projects/projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="../../articles/articles.html">Articles</a>
+        </li>
+        <li>
+          <a href="../../index.html?#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-container">
+      <h1>Fundamentals of Digital Signal Processing</h1>
+
+      <p>DSP has revolutionised many areas in science and engineering</p>
+      <ul>
+        <li><b>Space</b></li>
+        <ul>
+          <li>Space photography enhancement</li>
+          <li>Data compression</li>
+          <li>Intelligent sensory analysis by remote space probes</li>
+        </ul>
+      </ul>
+      <ul>
+        <li><b>Medical</b></li>
+        <ul>
+          <li>Diagnostic imaging (CT, MRI, Ultrasound)</li>
+          <li>Electrocardiogram analysis</li>
+          <li>Medical image storage</li>
+        </ul>
+      </ul>
+      <ul>
+        <li><b>Commercial</b></li>
+        <ul>
+          <li>Image and sound compression</li>
+          <li>Processing of image and video data for visual effects in multimedia</li>
+        </ul>
+      </ul>
+      <ul>
+        <li><b>Telephone</b></li>
+        <ul>
+          <li>Voice and data compression</li>
+          <li>Signal multiplexing</li>
+          <li>Filtering</li>
+        </ul>
+      </ul>
+      <ul>
+        <li><b>Military</b></li>
+        <ul>
+          <li>Radar</li>
+          <li>Sonar</li>
+          <li>Secure communication</li>
+        </ul>
+      </ul>
+      <ul>
+        <li><b>Industrial</b></li>
+        <ul>
+          <li>Oil and mineral prospecting</li>
+          <li>Process monitoring and control</li>
+          <li>CAD and design tools</li>
+        </ul>
+      </ul>
+      <ul>
+        <li><b>Scientific</b></li>
+        <ul>
+          <li>Diagnostic imaging (CT, MRI, Ultrasound)</li>
+          <li>Electrocardiogram analysis</li>
+          <li>Medical image storage</li>
+        </ul>
+      </ul>
+      <ul>
+        <li>And many more....</li>
+      </ul>
+      <p>Signal processing is an essential field that bridges mathematics, engineering, and computer science to analyze, modify, and synthesize signals. In this article, we delve into fundamental concepts like Fourier Transforms, wavelets, spectral analysis, Nyquist criteria, sampling and aliasing, filter design, and time-frequency analysis, providing a foundational understanding for aspiring researchers and engineers.</p>
+
+      <h2>Fourier Transforms</h2>
+      <p>The Fourier Transform (FT) is a mathematical tool used to decompose signals into their frequency components. It transforms a time-domain signal into a frequency-domain representation.</p>
+      <p><strong>Continuous-Time Fourier Transform:</strong></p>
+      <p>\[ X(f) = \int_{-\infty}^{\infty} x(t) e^{-j 2 \pi f t} dt \]</p>
+      <p><strong>Inverse Fourier Transform:</strong></p>
+      <p>\[ x(t) = \int_{-\infty}^{\infty} X(f) e^{j 2 \pi f t} df \]</p>
+      <p><strong>Applications:</strong> Communication systems, image and audio processing.</p>
+
+      <h2>Wavelets</h2>
+      <p>Wavelets provide localized time-frequency analysis, overcoming the limitations of the Fourier Transform for non-stationary signals.</p>
+      <p><strong>Wavelet Transform:</strong></p>
+      <p>\[ W(a, b) = \int_{-\infty}^{\infty} x(t) \psi^*\left(\frac{t - b}{a}\right) dt \]</p>
+      <p>Where \(a\) represents scale and \(b\) represents translation, and \(\psi\) is the mother wavelet.</p>
+      <p><strong>Applications:</strong> Signal denoising, image compression, and biomedical signal analysis.</p>
+
+      <h2>Spectral Analysis</h2>
+      <p>Spectral analysis involves studying the frequency content of signals. The power spectral density (PSD) describes how power is distributed across frequencies.</p>
+      <p><strong>Periodogram:</strong></p>
+      <p>\[ P(f) = \frac{1}{T} \left| X(f) \right|^2 \]</p>
+      <p><strong>Applications:</strong> Seismology, vibration analysis, and audio signal processing.</p>
+
+      <h2>Nyquist Criteria</h2>
+      <p>The Nyquist criterion ensures accurate signal representation during sampling. To avoid aliasing, the sampling rate \(f_s\) must be at least twice the highest frequency component \(f_{max}\):</p>
+      <p>\[ f_s \geq 2 f_{max} \]</p>
+      <p><strong>Consequences of Undersampling:</strong> Aliasing, which causes frequency overlap and signal distortion.</p>
+
+      <h2>Sampling and Aliasing</h2>
+      <p>Sampling converts continuous-time signals to discrete-time signals. Proper sampling ensures the original signal can be reconstructed without distortion.</p>
+      <p><strong>Aliasing:</strong> When the sampling frequency is insufficient, high-frequency components are misinterpreted as lower frequencies:</p>
+      <p>\[ x[n] = x(nT), \quad T = \frac{1}{f_s} \]</p>
+      <p><strong>Visualization:</strong> Aliasing can be mitigated using anti-aliasing filters before sampling.</p>
+
+      <h2>Filter Design</h2>
+      <p>Filters shape the frequency content of signals. Common types include:</p>
+      <ul>
+        <li><strong>Low-pass filter:</strong> Passes frequencies below a cutoff.</li>
+        <li><strong>High-pass filter:</strong> Passes frequencies above a cutoff.</li>
+        <li><strong>Band-pass filter:</strong> Passes frequencies within a range.</li>
+        <li><strong>Band-stop filter:</strong> Rejects frequencies within a range.</li>
+      </ul>
+      <p><strong>FIR Filter Design:</strong></p>
+      <p>\[ H(z) = \sum_{k=0}^{N-1} h[k] z^{-k} \]</p>
+      <p><strong>Applications:</strong> Noise reduction, signal separation, and communication systems.</p>
+
+      <h2>Time-Frequency Analysis</h2>
+      <p>Time-frequency analysis reveals how frequency content evolves over time. Common techniques include:</p>
+      <ul>
+        <li><strong>Short-Time Fourier Transform (STFT):</strong> Uses a fixed-size window for analysis.</li>
+        <li><strong>Wavelet Transform:</strong> Provides adaptive time-frequency resolution.</li>
+      </ul>
+      <p><strong>STFT:</strong></p>
+      <p>\[ X(t, f) = \int_{-\infty}^{\infty} x(\tau) w(\tau - t) e^{-j2\pi f \tau} d\tau \]</p>
+      <p><strong>Applications:</strong> Speech processing, biological signal analysis, and seismic data analysis.</p>
+
+      <h2>Conclusion</h2>
+      <p>These fundamental concepts of signal processing provide powerful tools for analyzing, designing, and synthesizing signals. A strong grasp of these topics enables engineers and researchers to tackle diverse challenges across various domains.</p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

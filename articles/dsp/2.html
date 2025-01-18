@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../default.css" />
+    <link id="theme-style" rel="stylesheet" type="text/css" href="" />
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Advanced Signal Processing Techniques</title>
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <div class="dots-wrapper">
+        <div id="dot-1" class="browser-dot"></div>
+        <div id="dot-2" class="browser-dot"></div>
+        <div id="dot-3" class="browser-dot"></div>
+      </div>
+      <ul id="navigation">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../../skills/skills.html">Skills</a>
+        </li>
+        <li>
+          <a href="../../projects/projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="../../articles/articles.html">Articles</a>
+        </li>
+        <li>
+          <a href="../../index.html?#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-container">
+      <header>
+        <h1>Advanced Signal Processing Techniques</h1>
+        <p>Exploring Innovations and Applications</p>
+      </header>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    <main>
+      <article>
+        <section>
+          <h2>Introduction</h2>
+          <p>Signal processing lies at the heart of modern engineering and technology, enabling a range of applications from wireless communication to biomedical imaging. Advanced signal processing techniques, characterized by their sophistication and adaptability, are pivotal in addressing complex challenges in diverse domains.</p>
+        </section>
+        <section>
+          <h2>1. Compressed Sensing</h2>
+          <p><strong>Compressed sensing</strong> leverages the sparsity of signals to recover them from fewer samples than dictated by the Nyquist-Shannon theorem. This paradigm shift has revolutionized fields like medical imaging and sensor networks. The key techniques include:</p>
+          <ul>
+            <li><strong>Sparse Representations:</strong> Transforming signals into domains where they exhibit sparsity (e.g., wavelet or Fourier domains).</li>
+            <li><strong>Reconstruction Algorithms:</strong> Techniques like Basis Pursuit and Orthogonal Matching Pursuit ensure accurate signal recovery.</li>
+          </ul>
+          <p>\[ \min \|x\|_1 \text{ subject to } Ax = b \]</p>
+        </section>
+        <section>
+          <h2>2. Adaptive Filtering</h2>
+          <p>Adaptive filters dynamically adjust their parameters based on input data, making them ideal for environments with non-stationary signals. Applications range from echo cancellation to financial time series analysis. Key algorithms include:</p>
+          <ul>
+            <li><strong>Least Mean Squares (LMS):</strong> A computationally efficient algorithm for minimizing error.</li>
+            <li><strong>Recursive Least Squares (RLS):</strong> Offers faster convergence at the cost of higher complexity.</li>
+          </ul>
+          <p>\[ w(n+1) = w(n) + 2\mu e(n)x(n) \]</p>
+        </section>
+        <section>
+          <h2>3. Multirate Signal Processing</h2>
+          <p>Multirate processing involves manipulating signals at different sampling rates, enabling efficient data handling and processing. Key components include:</p>
+          <ul>
+            <li><strong>Downsampling:</strong> Reducing the sampling rate for efficient storage and transmission.</li>
+            <li><strong>Upsampling:</strong> Increasing the sampling rate to restore high-frequency components.</li>
+          </ul>
+          <p>\[ y[n] = x[2n] \]</p>
+          <p>Applications include sub-band coding in audio compression and filter banks in wavelet transforms.</p>
+        </section>
+        <section>
+          <h2>4. Blind Source Separation</h2>
+          <p>Blind source separation (BSS) techniques disentangle mixed signals into their original components without prior knowledge of the sources. The cornerstone methods include:</p>
+          <ul>
+            <li><strong>Independent Component Analysis (ICA):</strong> Assumes statistical independence of sources.</li>
+            <li><strong>Non-Negative Matrix Factorization (NMF):</strong> Suitable for non-negative data such as image and audio signals.</li>
+          </ul>
+          <p>\[ X = AS \]</p>
+        </section>
+        <section>
+          <h2>5. Time-Frequency Analysis</h2>
+          <p>Conventional Fourier analysis struggles with non-stationary signals. Time-frequency techniques address this limitation by offering localized frequency information. Popular methods include:</p>
+          <ul>
+            <li><strong>Short-Time Fourier Transform (STFT):</strong> Analyzes signals using overlapping windows.</li>
+            <li><strong>Wavelet Transform:</strong> Decomposes signals into components with varying resolutions in time and frequency.</li>
+          </ul>
+          <p>\[ STFT(x(t)) = \int_{-\infty}^{\infty} x(\tau)w(\tau-t)e^{-j\omega\tau} d\tau \]</p>
+        </section>
+        <section>
+          <h2>Conclusion</h2>
+          <p>Advanced signal processing techniques are indispensable in modern technological advancements, driving innovation across fields. By mastering these techniques, one can unlock new opportunities for research and practical implementations.</p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

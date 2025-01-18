@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../default.css" />
+    <link id="theme-style" rel="stylesheet" type="text/css" href="" />
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Project</title>
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <div class="dots-wrapper">
+        <div id="dot-1" class="browser-dot"></div>
+        <div id="dot-2" class="browser-dot"></div>
+        <div id="dot-3" class="browser-dot"></div>
+      </div>
+      <ul id="navigation">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../../skills/skills.html">Skills</a>
+        </li>
+        <li>
+          <a href="../../projects/projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="../../articles/articles.html">Articles</a>
+        </li>
+        <li>
+          <a href="../../index.html?#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-container">
+      <header>
+        <h1>Cognitive Digital Signal Processing (Cognitive DSP)</h1>
+      </header>
+      <main>
+        <article>
+          <section>
+            <h2>Introduction</h2>
+            <p>Cognitive Digital Signal Processing (Cognitive DSP) is an emerging field that combines the adaptability of cognitive systems with the precision and efficiency of digital signal processing (DSP). Cognitive DSP systems dynamically adjust their processing strategies based on contextual awareness, environmental inputs, and desired outcomes.</p>
+          </section>
+          <section>
+            <h2>Key Concepts in Cognitive DSP</h2>
+            <p>Cognitive DSP introduces a feedback loop into traditional DSP systems, allowing real-time adaptation. Key elements include:</p>
+            <ul>
+              <li><strong>Perception:</strong> Sensing and interpreting the environment through input signals.</li>
+              <li><strong>Decision-Making:</strong> Employing algorithms to choose optimal processing strategies.</li>
+              <li><strong>Learning:</strong> Continuously improving performance based on feedback and historical data.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Mathematical Foundations</h2>
+            <p>The adaptability of cognitive DSP can be modeled as an optimization problem, where the goal is to minimize error or maximize performance:</p>
+            <div class="latex-equation">\[ \min_{x} \mathcal{L}(y, \hat{y}(x, \theta)) + \lambda R(\theta) \]</div>
+            <p>Here:</p>
+            <ul>
+              <li>\( y \): Actual signal output</li>
+              <li>\( \hat{y} \): Predicted output based on input \( x \) and system parameters \( \theta \)</li>
+              <li>\( \mathcal{L} \): Loss function measuring error</li>
+              <li>\( R(\theta) \): Regularization term ensuring stability</li>
+              <li>\( \lambda \): Regularization weight</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Applications</h2>
+            <p>Cognitive DSP is transforming several industries. Key applications include:</p>
+            <h3>1. Cognitive Radio</h3>
+            <p>Cognitive radios dynamically allocate frequency bands based on spectrum availability. The system uses:</p>
+            <div class="latex-equation">\[ P(f) = \begin{cases} 1 & \text{if } f \text{ is free} \\ 0 & \text{otherwise} \end{cases} \]</div>
+            <p>This function determines whether a frequency \( f \) is available for transmission.</p>
+            <h3>2. Adaptive Noise Cancellation</h3>
+            <p>Cognitive DSP enables real-time adaptation to changing noise environments. Adaptive filters adjust their coefficients using algorithms like LMS (Least Mean Squares):</p>
+            <div class="latex-equation">\[ w(n+1) = w(n) + \mu e(n)x(n) \]</div>
+            <p>Where \( w \) represents filter weights, \( \mu \) is the learning rate, and \( e(n) \) is the error signal.</p>
+            <h3>3. Smart Audio Processing</h3>
+            <p>Cognitive DSP is used in audio devices to enhance speech, suppress noise, and improve user experience in real-time.</p>
+          </section>
+          <section>
+            <h2>Challenges</h2>
+            <p>Despite its potential, cognitive DSP faces several challenges:</p>
+            <ul>
+              <li><strong>Computational Complexity:</strong> Adaptive algorithms can be resource-intensive.</li>
+              <li><strong>Latency:</strong> Real-time applications demand minimal processing delays.</li>
+              <li><strong>Robustness:</strong> Ensuring consistent performance in dynamic environments.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Future Directions</h2>
+            <p>Cognitive DSP is poised to grow with advancements in machine learning, edge computing, and signal processing techniques. Future research may focus on reducing complexity, improving energy efficiency, and expanding applications in areas like healthcare and autonomous systems.</p>
+          </section>
+          <section>
+            <h2>Conclusion</h2>
+            <p>Cognitive DSP represents a paradigm shift in signal processing, enabling smarter, more adaptive systems. By integrating real-time learning and decision-making, it holds immense promise for the future of technology.</p>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

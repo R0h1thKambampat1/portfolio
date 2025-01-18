@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../default.css" />
+    <link id="theme-style" rel="stylesheet" type="text/css" href="" />
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Project</title>
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <div class="dots-wrapper">
+        <div id="dot-1" class="browser-dot"></div>
+        <div id="dot-2" class="browser-dot"></div>
+        <div id="dot-3" class="browser-dot"></div>
+      </div>
+      <ul id="navigation">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../../skills/skills.html">Skills</a>
+        </li>
+        <li>
+          <a href="../../projects/projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="../../articles/articles.html">Articles</a>
+        </li>
+        <li>
+          <a href="../../index.html?#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-container">
+      <header>
+        <h1>Non-Linear Digital Signal Processing (Non-Linear DSP)</h1>
+      </header>
+      <main>
+        <article>
+          <section>
+            <h2>Introduction</h2>
+            <p>Traditional digital signal processing techniques rely on linear assumptions, which work well for systems where output is directly proportional to input. However, many real-world phenomena exhibit non-linear behavior, necessitating the development of <strong>Non-Linear DSP</strong> techniques. These techniques analyze, model, and process signals where superposition and proportionality do not hold.</p>
+          </section>
+          <section>
+            <h2>Key Concepts in Non-Linear DSP</h2>
+            <p>Non-Linear DSP deals with systems where the relationship between input and output is governed by non-linear equations. The foundation involves:</p>
+            <ul>
+              <li><strong>Non-Linear Systems:</strong> Systems described by equations like \( y = f(x) \), where \( f \) is non-linear.</li>
+              <li><strong>Chaotic Behavior:</strong> Some non-linear systems exhibit chaotic, unpredictable dynamics.</li>
+              <li><strong>Harmonic Distortion:</strong> A common characteristic caused by non-linearity, requiring specialized processing.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Mathematical Foundations</h2>
+            <p>Non-linear systems are often modeled using differential or difference equations. For instance, the output \( y[n] \) of a non-linear system might depend on both the current and past inputs in a non-linear manner:</p>
+            <div class="latex-equation">\[ y[n] = f(x[n], x[n-1], \ldots, x[n-k]) \]</div>
+            <p>Where \( f \) is a non-linear function. A common example is the quadratic map:</p>
+            <div class="latex-equation">\[ x_{n+1} = r x_n (1 - x_n) \]</div>
+            <p>This equation models population growth and exhibits chaotic behavior for certain values of \( r \).</p>
+          </section>
+          <section>
+            <h2>Applications of Non-Linear DSP</h2>
+            <h3>1. Audio Signal Processing</h3>
+            <p>Non-linear DSP techniques are used in audio systems to model distortion, echo, and dynamic range compression. For instance, in music production:</p>
+            <div class="latex-equation">\[ y(t) = \text{sgn}(x(t)) \cdot |x(t)|^\alpha \]</div>
+            <p>Here, \( \alpha \) controls the amount of distortion applied to the signal.</p>
+            <h3>2. Biomedical Signal Analysis</h3>
+            <p>Biomedical signals, such as ECG and EEG, often exhibit non-linear characteristics. Techniques like phase space reconstruction and Lyapunov exponents are used to analyze chaotic dynamics in heartbeats and brain activity.</p>
+            <h3>3. Non-Linear Filtering</h3>
+            <p>Filters like median filters and morphological filters are used in image and video processing to handle impulsive noise and preserve edges. For instance, a median filter computes:</p>
+            <div class="latex-equation">\[ y[n] = \text{median}\{x[n-k], \ldots, x[n], \ldots, x[n+k]\} \]</div>
+          </section>
+          <section>
+            <h2>Challenges</h2>
+            <p>Processing non-linear systems is inherently more complex than linear systems due to:</p>
+            <ul>
+              <li><strong>Computational Complexity:</strong> Many non-linear techniques require iterative algorithms.</li>
+              <li><strong>Stability:</strong> Ensuring stable solutions in non-linear systems can be challenging.</li>
+              <li><strong>Lack of Generalized Tools:</strong> Non-linear systems are often problem-specific, requiring tailored solutions.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Future Directions</h2>
+            <p>With the growing availability of computational power and machine learning techniques, the future of non-linear DSP looks promising. Research is focused on:</p>
+            <ul>
+              <li>Improving computational efficiency of non-linear algorithms.</li>
+              <li>Applying non-linear DSP in emerging fields like quantum computing and neuroscience.</li>
+              <li>Developing hybrid systems that combine linear and non-linear techniques.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Conclusion</h2>
+            <p>Non-Linear DSP is a critical field for processing signals in systems where traditional linear assumptions fail. Its applications span diverse domains, from audio processing to biomedical engineering, offering new insights and capabilities for analyzing complex systems.</p>
+            <p>As technology continues to evolve, the role of non-linear DSP will only grow, enabling innovations in both academic research and practical applications.</p>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
