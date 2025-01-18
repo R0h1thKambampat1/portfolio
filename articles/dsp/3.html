@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../default.css" />
+    <link id="theme-style" rel="stylesheet" type="text/css" href="" />
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Applications in Modern Technologies</title>
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <div class="dots-wrapper">
+        <div id="dot-1" class="browser-dot"></div>
+        <div id="dot-2" class="browser-dot"></div>
+        <div id="dot-3" class="browser-dot"></div>
+      </div>
+      <ul id="navigation">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../../skills/skills.html">Skills</a>
+        </li>
+        <li>
+          <a href="../../projects/projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="../../articles/articles.html">Articles</a>
+        </li>
+        <li>
+          <a href="../../index.html?#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <main>
+      <header>
+        <h1>Applications of Advanced Signal Processing in Modern Technologies</h1>
+      </header>
+      <article>
+        <section>
+          <h2>Introduction</h2>
+          <p>Advanced signal processing techniques have enabled groundbreaking applications in various modern technologies. These techniques provide the foundation for innovations in fields like communication, imaging, healthcare, and data analytics.</p>
+        </section>
+        <section>
+          <h2>Applications in Communication Systems</h2>
+          <p>In wireless communications, signal processing techniques optimize bandwidth and improve data transmission. The principle of <strong>modulation</strong> is key:</p>
+          <div class="latex-equation">\[ s(t) = A \cos(2\pi f_c t + \phi) \]</div>
+          <p>Here, \( A \) is the amplitude, \( f_c \) is the carrier frequency, and \( \phi \) is the phase. Techniques like Orthogonal Frequency Division Multiplexing (OFDM) are widely used in 5G networks.</p>
+        </section>
+        <section>
+          <h2>Applications in Imaging</h2>
+          <p>Medical imaging technologies such as MRI and CT scans rely on advanced signal processing algorithms for image reconstruction:</p>
+          <div class="latex-equation">\[ g(x, y) = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f(u, v) e^{-j2\pi(ux + vy)} dudv \]</div>
+          <p>This equation describes the inverse Fourier transform used to convert frequency-domain data into spatial-domain images.</p>
+        </section>
+        <section>
+          <h2>Applications in Machine Learning</h2>
+          <p>Signal processing plays a vital role in preprocessing and feature extraction for machine learning. For instance, audio signal classification often uses the <strong>Mel-Frequency Cepstral Coefficients (MFCCs)</strong>:</p>
+          <div class="latex-equation">\[ c_n = \sum_{k=1}^{K} \log(S_k) \cos\left[n\left(k - 0.5\right)\frac{\pi}{K}\right] \]</div>
+          <p>Here, \( S_k \) represents the power spectrum of the signal.</p>
+        </section>
+        <section>
+          <h2>Applications in Financial Engineering</h2>
+          <p>Signal processing is essential for analyzing financial data, such as identifying trends in stock prices. Techniques like wavelet transforms allow multi-resolution analysis:</p>
+          <div class="latex-equation">\[ W(a, b) = \int_{-\infty}^{\infty} x(t) \psi^*\left(\frac{t-b}{a}\right) dt \]</div>
+          <p>Here, \( \psi \) is the wavelet function, and \( a \) and \( b \) represent scaling and translation parameters.</p>
+        </section>
+        <section>
+          <h2>Conclusion</h2>
+          <p>Advanced signal processing techniques are pivotal in shaping modern technologies, driving innovation in communication, healthcare, machine learning, and beyond. As research advances, new applications continue to emerge, unlocking the full potential of these techniques.</p>
+        </section>
+      </article>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
